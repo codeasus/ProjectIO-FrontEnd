@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+main {
+    grid-column: 2 / 3;
+    grid-row:    1 / 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6eef1;
+}
+
+#signin {
+    height: 70px;
+    width: 100%;
+    padding-left: 25px;    
+}
+
+#welcome-signin {
+    display: none;
+}
+
+#signin form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#signin form div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+#email input, #password input, #submit input {
+    width: 95%;
+    height: 60%;
+    border: none;
+    border-radius: 4px;
+    padding-left: 5px;
+    color: rgb(75, 96, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+#email input:focus, #password input:focus, #submit input:focus {
+    border: 1px solid rgb(80, 166, 246);
+}
+
+#mobile-signup {
+    display: none;
+}
+
+#submit input {
+    padding-left: 0;
+    margin-left: 10%;
+    width: 40%;
+    font-size: 14px;
+    align-self: flex-start;
+    color: aliceblue;
+    background-color: rgb(80, 166, 246);
+}
+
+#submit input:hover {
+    color: rgb(80, 166, 246);
+    background-color: aliceblue;
+}
+
+#signin form #password a {
+    position: absolute;
+    top: 53px;
+    font-size: 12px;
+    align-self: flex-start;
+    text-decoration: none;
+    color: rgb(80, 166, 246);
+}
+
+#signin form #password a:hover {
+    color: rgb(0, 95, 184);
+}
+
+
+#signup {
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    color: rgb(75, 96, 124);
+}
+
+
+#signup form input:focus {
+    border: 1px solid rgb(80, 166, 246);
+}
+
+#signup form select:focus{
+    border: 1px solid rgb(80, 166, 246);
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+#signup h2, #signup p {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+#signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup form div {
+    height: 70px;
+    width: 100%;
+}
+
+.union {
+    display: flex;
+}
+
+.union div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-email{
+    display: flex;
+    justify-content: center;
+}
+
+#signup-email input{
+    align-self: center;
+    height: 40px;
+    width: 92%;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    padding-left: 5px;
+    color: rgb(75, 96, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+.union input {
+    height: 40px;
+    width: 85%;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    padding-left: 5px;
+    color: rgb(75, 96, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+.union-two {
+    display: flex;
+}
+.union-two div {
+    display: flex;
+    justify-content: center;
+}
+.union-two #birthday {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.union-two #birthday input{
+    align-self: center;
+    height: 40px;
+    width: 85%;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    color: rgb(151, 161, 172);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.union-two #birthday label {
+    margin-left: 8%;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.union-two #gender {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.union-two #gender label {
+    padding-left: 8%;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.union-two #gender select {
+    align-self: center;
+    height: 40px;
+    width: 85%;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    color: rgb(151, 161, 172);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#signup-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-submit input {
+    height: 40px;
+    width: 25%;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    background-color: rgb(80, 166, 246);
+}
+
+#signup-submit input:hover {
+    background-color: aliceblue;
+    color: rgb(80, 166, 246);
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    
+    main {
+        margin-top: 20px;
+        grid-row: 2 / 3;
+        grid-column: 1 / 1;
+        display: flex;
+    }
+    
+    #signin {
+        flex: 1;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #welcome-signin {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        color: rgb(75, 96, 124);
+        padding-left: 10%;
+    }
+
+    #welcome-signin img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    #signin form {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #signin #mobile-signup {
+        display: flex;
+        flex: 1;
+    }
+
+    #signin form div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #email input, #password input, #submit input {
+        width: 80%;
+        height: 60%;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #signin form #password a {
+        position: relative;
+        top: 5px;
+        padding-left: 10%;
+    }
+
+    #submit input {
+        margin: 0;
+        width: 60%;
+        align-self: center;
+        font-size: 16px;
+        background-image: linear-gradient(to right, #4481eb 0%, #04befe 100%);
+    }
+    
+    #submit input:hover {
+        color: rgb(80, 166, 246);
+        background-color: aliceblue;
+        background-image: none;
+    }
+
+    #mobile-signup {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mobile-signup button {
+        width: 60%;
+        height: 43px;
+        align-self: flex-start;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        color: aliceblue;
+        font-family: 'Roboto', sans-serif;
+        background-image: linear-gradient(to left, #8fa0ee 0%, #764ba2 100%);
+    }
+
+    #mobile-signup button:hover {
+        color: #764ba2;
+        background-color: aliceblue;
+        background-image: none;
+    }
+
+    #mobile-signup button:focus {
+        border: 1px solid #764ba2;
+    }
+
+    #signup {
+        display: none;
+    }
+}

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:300px 800px 200px;
+    color: rgb(75, 96, 124);
+    background-color: #e6eef1;
+}
+
+#mobile-header {
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%);
+    background-image: linear-gradient(to bottom, #7e14f0 0%, #3e85ff 100%);
+}
+
+#mobile-header a {
+    align-self: flex-end;
+    color: aliceblue;
+    margin-bottom: 30px;
+    margin-left: 10%;
+}
+
+#mobile-signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-signup-form img {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+#mobile-signup-form h2 {
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+#mobile-signup-form p {
+    margin-top:  5px;
+    margin-left:  10%;
+}
+
+#mobile-signup-form form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-signup-form form div {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-signup-form form input {
+    height: 45px;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: rgb(75, 96, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+#mobile-signup-form form input:focus {
+    border: 1px solid rgb(80, 166, 246);
+}
+
+
+#mobile-signup-form form #birthday {
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+#birthday label{
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+#mobile-signup-form form #birthday input {
+    height: 45px;
+}
+
+#mobile-signup-form form #gender {
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+#mobile-signup-form form #gender:focus {
+    border: 1px solid rgb(80, 166, 246);
+}
+
+#gender label{
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+#gender  select {
+    height: 45px;
+    width: 80%;
+    border: none;
+    border-radius: 4px;
+    padding-left: 5px;
+    color: rgb(75, 96, 124);
+    font-family: 'Roboto', sans-serif;
+}
+
+#mobile-signup-form form #signup-submit input {
+    cursor: pointer;
+    width: 150px;
+    padding: 0px;
+    font-size: 20px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+#mobile-signup-form form #signup-submit input:hover {
+    color: #5271C4;
+    background-color: aliceblue;
+    background-image: none;
+}
+
+#mobile-signup-form form #signup-submit input:focus {
+    border: 1px solid #ab69f1;
+}
